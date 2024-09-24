@@ -50,7 +50,7 @@ function donateCalculation(inputField, preBalance, donateName){
   const newBalance = preDonateTK + inputValue;
   document.getElementById("my-balance").innerText = newMyBalance;
   preBalance.innerText = newBalance;
-//   clear input field 
+//   clear input 
   inputField.value = "";
 
   // donation time Object 
@@ -72,5 +72,5 @@ function donateCalculation(inputField, preBalance, donateName){
 }
 
 
-  
+
 
