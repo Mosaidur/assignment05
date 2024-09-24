@@ -56,46 +56,68 @@
     </header>
     <main>
         <!-- FQNA -->
-        <section class="max-w-screen-xl mx-auto my-14">
-          <h1 class="mb-16 font-bold text-4xl">Important Questions:-</h1>
-            <div class="join join-vertical max-w-screen-xl z-10">
+        <section class="max-w-screen-xl mx-auto my-10 px-4 md:px-8">
+            <h1 class="mb-10 font-bold text-2xl md:text-4xl text-center">Important Questions</h1>
+            <div class="join join-vertical max-w-full md:max-w-screen-lg z-10 mx-auto">
+                <!-- Collapse Item 1 -->
                 <div class="join-item collapse collapse-arrow border-base-300 border">
-                  <input type="radio" name="my-accordion-4" />
-                  <div class="text-xl collapse-title font-medium">What is the DOM?</div>
-                  <div class="collapse-content">
-                    <p class="secondary-color text-justify ">The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document as a tree of nodes, where each node corresponds to a part of the document (such as an element, attribute, or text). JavaScript can manipulate the DOM to dynamically change the content, structure, and style of a webpage.</p>
-                  </div>
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="text-lg md:text-xl collapse-title font-medium">
+                        What is the DOM?
+                    </div>
+                    <div class="collapse-content">
+                        <p class="text-sm md:text-base secondary-color text-justify">
+                            The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document as a tree of nodes, where each node corresponds to a part of the document (such as an element, attribute, or text). JavaScript can manipulate the DOM to dynamically change the content, structure, and style of a webpage.
+                        </p>
+                    </div>
                 </div>
+    
+                <!-- Collapse Item 2 -->
                 <div class="join-item collapse collapse-arrow border-base-300 border">
-                  <input type="radio" name="my-accordion-4" />
-                  <div class="text-xl font-medium collapse-title ">How is the DOM structured?</div>
-                  <div class="collapse-content">
-                    <p class="text-justify secondary-color ">
-                        The DOM is structured like a tree, starting with the root node (the document object), followed by branches that represent elements like html, head, body, and all child elements within these tags. Each element in the DOM tree is a node, and the relationships between elements (parent, child, sibling) form the tree structure.</p>
-                  </div>
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="text-lg md:text-xl collapse-title font-medium">
+                        How is the DOM structured?
+                    </div>
+                    <div class="collapse-content">
+                        <p class="text-sm md:text-base secondary-color text-justify">
+                            The DOM is structured like a tree, starting with the root node (the document object), followed by branches that represent elements like html, head, body, and all child elements within these tags. Each element in the DOM tree is a node, and the relationships between elements (parent, child, sibling) form the tree structure.
+                        </p>
+                    </div>
                 </div>
+    
+                <!-- Collapse Item 3 -->
                 <div class="collapse collapse-arrow join-item border-base-300 border">
-                  <input type="radio" name="my-accordion-4" />
-                  <div class="text-xl collapse-title font-medium">How do you select DOM elements using JavaScript?</div>
-                  <div class="collapse-content">
-                    <p class="text-justify secondary-color">You can select DOM elements using several methods: <br>
-                        document.getElementById('id'): Selects an element by its id. <br>
-                        document.getElementsByClassName('className'): Selects all elements with a particular class. <br>
-                        document.getElementsByTagName('tag'): Selects elements by their tag name. <br>
-                        document.querySelector('selector'): Selects the first element that matches a CSS selector. <br>
-                        document.querySelectorAll('selector'): Selects all elements that match a CSS selector.</p>
-                  </div>
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="text-lg md:text-xl collapse-title font-medium">
+                        How do you select DOM elements using JavaScript?
+                    </div>
+                    <div class="collapse-content">
+                        <p class="text-sm md:text-base secondary-color text-justify">
+                            You can select DOM elements using several methods:<br>
+                            <strong>document.getElementById('id')</strong>: Selects an element by its id.<br>
+                            <strong>document.getElementsByClassName('className')</strong>: Selects all elements with a particular class.<br>
+                            <strong>document.getElementsByTagName('tag')</strong>: Selects elements by their tag name.<br>
+                            <strong>document.querySelector('selector')</strong>: Selects the first element that matches a CSS selector.<br>
+                            <strong>document.querySelectorAll('selector')</strong>: Selects all elements that match a CSS selector.
+                        </p>
+                    </div>
                 </div>
+    
+                <!-- Collapse Item 4 -->
                 <div class="join-item border-base-300 collapse collapse-arrow border">
-                  <input type="radio" name="my-accordion-4" />
-                  <div class="text-xl collapse-title font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
-                  <div class="collapse-content">
-                    <p class="secondary-color text-justify ">To manipulate an element's attributes and styles using the DOM, you primarily interact with the element's properties and methods in JavaScript. Attributes can be modified using the setAttribute() method, which allows you to change existing attributes or add new ones, such as modifying the src of an image or the href of a link. Additionally, you can access certain attributes directly through properties associated with the element. For styles, you can use the style property to change CSS styles directly. This allows you to modify aspects like colors, sizes, and positioning by setting individual CSS properties. By dynamically altering attributes and styles, you can create interactive and responsive web pages, enhancing user experience and visual appeal.</p>
-                  </div>
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="text-lg md:text-xl collapse-title font-medium">
+                        How do you manipulate an element's attributes and styles using the DOM?
+                    </div>
+                    <div class="collapse-content">
+                        <p class="text-sm md:text-base secondary-color text-justify">
+                            To manipulate an element's attributes and styles using the DOM, you primarily interact with the element's properties and methods in JavaScript. Attributes can be modified using the <code>setAttribute()</code> method, which allows you to change existing attributes or add new ones, such as modifying the <code>src</code> of an image or the <code>href</code> of a link. For styles, you can use the <code>style</code> property to change CSS styles directly. This allows you to modify aspects like colors, sizes, and positioning by setting individual CSS properties. By dynamically altering attributes and styles, you can create interactive and responsive web pages.
+                        </p>
+                    </div>
                 </div>
-              </div>
+            </div>
         </section>
-        
     </main>
+    
 </body>
 </html>
