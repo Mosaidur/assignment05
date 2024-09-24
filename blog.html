@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+
+    <!-- google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- tailwind and daisy UI  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .fontLexend {
+        font-family: "Lexend", sans-serif;
+        font-style: normal;
+        }
+        .primary-color{
+            color: #111111;
+        }
+        .secondary-color{
+            color: rgba(17, 17, 17, 0.7);
+        }
+        .third-color{
+            color: rgba(17, 17, 17, 0.4);
+        }
+        .btn-color{
+            background-color: #B4F461;
+        }
+    </style>
+</head>
+<body class="fontLexend">
+    <header class="sticky top-0 shadow-sm z-10">
+        <!-- Sticky navbar section  -->
+        <nav class="justify-around items-center bg-amber-50 flex py-5">
+            <!-- blog button  -->
+            <div>
+                <a href="index.html"><button class="btn btn-color px-7 hover:bg-[#aded5a]">Home</button></a>
+            </div>
+            <!-- brand icon & text -->
+            <div class="flex items-center gap-2">
+                <img src="assets/logo.png" alt="brand icon">
+                <a href="#"><h1 class="lg:block font-bold hidden ">Donate Bangladesh</h1></a>
+            </div>
+            <!-- total donation TK -->
+             <div class="items-center flex gap-2">
+                <img src="assets/coin.png" alt="taka-icon">
+                <p>5500</p>
+                <p>BDT</p>
+             </div>
+        </nav>
+    </header>
+    <main>
+        <!-- FQNA -->
+        <section class="max-w-screen-xl mx-auto my-14">
+          <h1 class="mb-16 font-bold text-4xl">Important Questions:-</h1>
+            <div class="join join-vertical max-w-screen-xl z-10">
+                <div class="join-item collapse collapse-arrow border-base-300 border">
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="text-xl collapse-title font-medium">What is the DOM?</div>
+                  <div class="collapse-content">
+                    <p class="secondary-color text-justify ">The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document as a tree of nodes, where each node corresponds to a part of the document (such as an element, attribute, or text). JavaScript can manipulate the DOM to dynamically change the content, structure, and style of a webpage.</p>
+                  </div>
+                </div>
+                <div class="join-item collapse collapse-arrow border-base-300 border">
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="text-xl font-medium collapse-title ">How is the DOM structured?</div>
+                  <div class="collapse-content">
+                    <p class="text-justify secondary-color ">
+                        The DOM is structured like a tree, starting with the root node (the document object), followed by branches that represent elements like html, head, body, and all child elements within these tags. Each element in the DOM tree is a node, and the relationships between elements (parent, child, sibling) form the tree structure.</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="text-xl collapse-title font-medium">How do you select DOM elements using JavaScript?</div>
+                  <div class="collapse-content">
+                    <p class="text-justify secondary-color">You can select DOM elements using several methods: <br>
+                        document.getElementById('id'): Selects an element by its id. <br>
+                        document.getElementsByClassName('className'): Selects all elements with a particular class. <br>
+                        document.getElementsByTagName('tag'): Selects elements by their tag name. <br>
+                        document.querySelector('selector'): Selects the first element that matches a CSS selector. <br>
+                        document.querySelectorAll('selector'): Selects all elements that match a CSS selector.</p>
+                  </div>
+                </div>
+                <div class="join-item border-base-300 collapse collapse-arrow border">
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="text-xl collapse-title font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                  <div class="collapse-content">
+                    <p class="secondary-color text-justify ">To manipulate an element's attributes and styles using the DOM, you primarily interact with the element's properties and methods in JavaScript. Attributes can be modified using the setAttribute() method, which allows you to change existing attributes or add new ones, such as modifying the src of an image or the href of a link. Additionally, you can access certain attributes directly through properties associated with the element. For styles, you can use the style property to change CSS styles directly. This allows you to modify aspects like colors, sizes, and positioning by setting individual CSS properties. By dynamically altering attributes and styles, you can create interactive and responsive web pages, enhancing user experience and visual appeal.</p>
+                  </div>
+                </div>
+              </div>
+        </section>
+        
+    </main>
+</body>
+</html>
